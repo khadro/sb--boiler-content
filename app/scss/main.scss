@@ -1,0 +1,45 @@
+// @charset "UTF-8";
+
+// @import "./abstracts/colours";
+
+body {
+  display: none;
+  padding-left: .5rem;
+
+  header {
+    display: block;
+    font-family: arial, cursive;
+  }
+}
+
+body #header {
+  display: none;
+}
+
+// @supports (display: grid) {
+//   body {
+//     display: grid;
+//   }
+// }
+
+@media screen and (min-width: 1200px) {
+  // header {
+  //   // background-color: $yellow;
+  // }
+
+  div {
+    text-decoration: underline;
+  }
+}
+
+::placeholder {
+  color: #f00c;
+  display: inline-block;
+
+  @media screen and (min-width: 1200px) {
+    ::placeholder {
+      color: #faf;
+      display: block;
+    }
+  }
+}
